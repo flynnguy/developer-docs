@@ -9,12 +9,20 @@ Ninja Sphere Documentation!
 
 This is community generated documentation for the Ninja Sphere. For more information about the Ninja Sphere, please see the `forums <https://discuss.ninjablocks.com/>`_ and the `official documentation <https://developers.ninja/>`_ where most of this information was gathered/forked.
 
-Just received your Ninja Sphere?
-----------------------------------
-If you are not a developer and want more information about setting up your new Ninja Sphere, `click here to get started <http://welcome.ninja>`_
+..  Just received your Ninja Sphere?
+    ----------------------------------
+    If you are not a developer and want more information about setting up your new Ninja Sphere, `click here to get started <http://welcome.ninja>`_
 
-Table of contents
--------------------
+User's Guide
+============
+
+.. toctree::
+  :maxdepth: 2
+
+  users_guide/index
+
+Development
+===========
 
 .. toctree::
   :maxdepth: 2
@@ -27,6 +35,13 @@ Table of contents
   
   hardwareguides/index
   misc/index
+
+Legacy
+======
+
+.. toctree::
+  :maxdepth: 2
+
   legacy/index
 
 
