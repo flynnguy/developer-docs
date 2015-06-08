@@ -18,6 +18,10 @@ Mercurial
 =========
 `Mercurial <https://mercurial.selenic.com/>`_ is also used to a lesser extent.
 
+MQTT
+====
+MQTT is a broker that handles publishing and subscribing for events. Read more in the :doc:`MQTT Section<mqtt>`.
+
 Node.js
 =======
 `Node <https://nodejs.org/>`_ is mostly no longer used but you may run across it.
