@@ -3,9 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Ninja Sphere Developer Docs
-===========================
-Thanks for being a part of the the Ninja Sphere Developer Community! Please note the code is in **heavy development**, with bugfixes and new features being released weekly. Please join us on the `forums <https://discuss.ninjablocks.com/>`_ for all questions/comments.
+###########################
+Ninja Sphere Documentation!
+###########################
+
+This is community generated documentation for the Ninja Sphere. For more information about the Ninja Sphere, please see the `forums <https://discuss.ninjablocks.com/>`_ and the `official documentation <https://developers.ninja/>`_ where most of this information was gathered/forked.
 
 Just received your Ninja Sphere?
 ----------------------------------
@@ -17,7 +19,7 @@ Table of contents
 .. toctree::
   :maxdepth: 2
 
-  introduction/index
+  developer/index
   sphereappguides/index
   deviceconnectorguides/index
   referencedocs/index
@@ -26,3 +28,11 @@ Table of contents
   hardwareguides/index
   misc/index
   legacy/index
+
+
+..  Indices and tables
+    ==================
+
+    * :ref:`genindex`
+    * :ref:`modindex`
+    * :ref:`search`
