@@ -14,3 +14,5 @@ Alternatively, if you have mosquitto installed on your computer, you can specify
 ::
     $ mosquitto_sub -h ninjasphere.local -t '#'
 
+
+Most messages to/from devices and the models etc. are defined in the schemas:  https://github.com/ninjasphere/schemas
