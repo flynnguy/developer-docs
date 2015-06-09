@@ -226,7 +226,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   (master_doc, 'NinjaSphereDocs.tex', 'NinjaSphere Docs Documentation',
-   'flynnguy', 'manual'),
+   'ninja community', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -254,10 +254,10 @@ latex_documents = [
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [
-    (master_doc, 'ninjaspheredocs', 'NinjaSphere Docs Documentation',
-     [author], 1)
-]
+#man_pages = [
+#    (master_doc, 'ninjaspheredocs', 'NinjaSphere Docs Documentation',
+#     [author], 1)
+#]
 
 # If true, show URL addresses after external links.
 #man_show_urls = False
@@ -268,11 +268,11 @@ man_pages = [
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
-texinfo_documents = [
-  (master_doc, 'NinjaSphereDocs', 'NinjaSphere Docs Documentation',
-   author, 'NinjaSphereDocs', 'One line description of project.',
-   'Miscellaneous'),
-]
+#texinfo_documents = [
+#  (master_doc, 'NinjaSphereDocs', 'NinjaSphere Docs Documentation',
+#   author, 'NinjaSphereDocs', 'One line description of project.',
+#   'Miscellaneous'),
+#]
 
 # Documents to append as an appendix to all manuals.
 #texinfo_appendices = []
@@ -290,10 +290,10 @@ texinfo_documents = [
 # -- Options for Epub output ----------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = project
-epub_author = author
-epub_publisher = author
-epub_copyright = copyright
+#epub_title = project
+#epub_author = author
+#epub_publisher = author
+#epub_copyright = copyright
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = project
