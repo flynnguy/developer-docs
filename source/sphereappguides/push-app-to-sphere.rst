@@ -5,7 +5,7 @@ Push App to Sphere
 
 .. code-block:: bash
 
-	mkdir -p /data/sphere/user-autostart/apps/app-foobar
+	$ mkdir -p /data/sphere/user-autostart/apps/app-foobar
 
 2. The directory name and binary name should have the same name. package.json contains some metadata about the application.
 
@@ -19,13 +19,13 @@ Push App to Sphere
 
 .. code-block:: bash
 
-	GOARCH=arm GOOS=linux go build
-	scp app-foobar ninja@ninjasphere.local:/data/sphere/user-autostart/apps/app-foobar/app-foobar
-	scp package.json ninja@ninjasphere.local:/data/sphere/user-autostart/apps/app-foobar/package.json
+	$ GOARCH=arm GOOS=linux go build
+	$ scp app-foobar ninja@ninjasphere.local:/data/sphere/user-autostart/apps/app-foobar/app-foobar
+	$ scp package.json ninja@ninjasphere.local:/data/sphere/user-autostart/apps/app-foobar/package.json
 
 	
 4. Reboot the Sphere or run the following command to start the new application
 
 .. code-block:: bash
 
-	nservice app-foobar start
+	$ nservice app-foobar start
