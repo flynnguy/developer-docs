@@ -20,38 +20,26 @@ main.go
 		"os/signal"
 	
 		"github.com/davecgh/go-spew/spew"
-		"github.com/ninjasphere/go-ninja"
+		"github.com/ninjasphere/go-ninja/api"
 	)
 	
 	var _ = fmt.Printf
 	var _ = spew.Dump
 	
 	func main() {
+              conn, err := ninja.Connect("com.hello.world")
+              if err != nil {
+                      log.Fatalf("Could not connect to MQTT: %s", err)
+              }
+              spew.Dump(conn)
+
+              c := make(chan os.Signal, 1)
+              signal.Notify(c, os.Interrupt, os.Kill)
+
+              // Block until a signal is received.
+              s := <-c
+              fmt.Println("Got signal:", s)
 	
-		conn, err := ninja.Connect("com.hello.world")
-		if err != nil {
-			log.Fatalf("Could not connect to MQTT: %s", err)
-		}
-	
-		bus, err := conn.AnnounceDriver("com.hello.world", "driver-hello-world", getCurDir())
-		if err != nil {
-			log.Fatalf("Could not get driver bus: %s", err)
-		}
-	
-		spew.Dump(bus)
-	
-		c := make(chan os.Signal, 1)
-		signal.Notify(c, os.Interrupt, os.Kill)
-	
-		// Block until a signal is received.
-		s := <-c
-		fmt.Println("Got signal:", s)
-	
-	}
-	
-	func getCurDir() string {
-		pwd, _ := os.Getwd()
-		return pwd 	 "/"
 	}
 
 package.json
@@ -83,9 +71,16 @@ version.go
 
 
 
+3. Compile and run
+
+.. code-block:: bash
+
+   $ go build
+   $ DEBUG=t ./driver-hello-world --mqtt.host=ninjasphere.local --mqtt.port=1883 --serial=ABCDEFGHIJKLM
+
+
 3. Example Drivers
 
 	* `Driver for Philips Hue <https://github.com/ninjasphere/driver-go-hue>`_
 	* `Driver for Samsung TV over IP <https://github.com/ninjasphere/driver-samsung-tv>`_
 	* `Example Fake Driver <https://github.com/ninjasphere/go-ninja/tree/master/fakedriver>`_
-	
