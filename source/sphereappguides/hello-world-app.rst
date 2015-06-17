@@ -145,3 +145,4 @@ Example Sphere Applications
 ===========================
 
 	* `Sphere Go LED Controller <https://github.com/ninjasphere/sphere-go-led-controller>`_
+    * `Uber Application` <https://github.com/ninjasphere/app-uber>`_
